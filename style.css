@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: 'Roboto';
+}
+
+body {
+    height: 100vh;
+}
+
+nav {
+    height: 9vh;
+    border-bottom: 1px solid rgba(197, 192, 192, 0.571);
+    display: flex;
+    align-items: center;
+}
+
+.nav-con {
+    width: 94%;
+    margin: auto;
+}
+
+.nav-con {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.nav-con img {
+    width: 10%;
+}
+
+.nav-con div a {
+    text-decoration: none;
+    font-size: 17px;
+    margin-inline: 11px;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+    transition: 0.8s;
+}
+
+.in {
+    font-size: 17px;
+    padding: 10px 15px;
+    text-transform: capitalize;
+    border-radius: 40px;
+    background-color: rgba(255, 102, 0, 0.74);
+    color: white;
+    border: none;
+    letter-spacing: 0.5px;
+}
+
+.up {
+    font-size: 17px;
+    padding: 10px 15px;
+    text-transform: capitalize;
+    border-radius: 17px 0px 18px 20px;
+    transition: 0.8s;
+    background-color: rgba(203, 196, 196, 0.5);
+    color: rgba(255, 102, 0, 0.993);
+    border: none;
+    letter-spacing: 0.5px;
+}
+
+.up:hover {
+    border-radius: 35px;
+    background-color: rgba(255, 102, 0, 0.74);
+    color: white;
+}
+
+button {
+    margin-inline: 9px;
+}
+
+.container {
+    background: url("https://content-strapi-lms.s3.ap-south-1.amazonaws.com/icons/lines_f077faf53d.svg");
+    height: 80vh;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top p {
+    font-size: 21px;
+    font-weight: 500;
+    color: rgba(26, 25, 25, 0.721);
+    animation: blink 2s infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.number span {
+    font-size: 21px;
+    color: white;
+    background-color: black;
+    padding: 9px 14px;
+    line-height: 11vh;
+    margin-inline: 3px;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.mid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mid h1 {
+    font-size: 90px;
+}
+
+.mid p {
+    font-size: 15px;
+    color: black;
+    line-height: 75px;
+    font-weight: 800;
+}
+
+.bottom button {
+    font-size: 28px;
+    cursor: pointer;
+    background-color: black;
+    border-radius: 50px;
+    color: white;
+    padding: 15px 25px;
+    animation: out 2s infinite alternate;
+}
+
+@keyframes out {
+    0% {
+        font-size: 35px;
+    }
+
+    100% {
+        font-size: 28px;
+    }
+}
